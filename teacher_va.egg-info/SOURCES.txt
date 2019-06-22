@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+teacher_va/__init__.py
+teacher_va/dataframe.py
+teacher_va/estimate.py
+teacher_va/lib.py
+teacher_va.egg-info/PKG-INFO
+teacher_va.egg-info/SOURCES.txt
+teacher_va.egg-info/dependency_links.txt
+teacher_va.egg-info/requires.txt
+teacher_va.egg-info/top_level.txt

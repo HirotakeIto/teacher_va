@@ -1,0 +1,4 @@
+pandas>=0.15.0
+scikit-learn
+rpy2
+tzlocal
