@@ -35,7 +35,7 @@ def get_variance_teacher_using_1lag(tdfx: TeacherDataFrame):
     )
     # Todo: 元論文と異なり勝手に0以上にしている: これバリむずい
     x_df = DataFrame(stack((tdfx[tdfx.signal_class_col], signal_1_lag), axis=1))
-    return max(x_df.dropna().cov().values[0, 1], 0)
+    # return max(x_df.dropna().cov().values[0, 1], 0)
     return abs(x_df.dropna().cov().values[0, 1])
 
 
