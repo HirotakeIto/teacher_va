@@ -91,6 +91,9 @@ class TeacherValueAddedEstimator:
             self. extract_teacher_effect_from_signal = extract_teacher_effect_from_signal
         self.effect_type = effect_type
         self.teacher_effect = None
+        self.variance_student = None
+        self.variance_teacher = None
+        self.variance_classroom = None
 
 
     def fit(self, sdf: StudentDataFrame, is_custom_predict = False, custom_resid = None):
@@ -118,4 +121,7 @@ class TeacherValueAddedEstimator:
             variance_classroom=variance_classroom,
             effect_by= effect_by
         )
+        self.variance_student = variance_student
+        self.variance_teacher = variance_teacher
+        self.variance_classroom = variance_classroom
         return self
