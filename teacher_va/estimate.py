@@ -33,9 +33,10 @@ def get_variance_teacher_using_1lag(tdfx: TeacherDataFrame):
         id_cols=tdfx.teacher_id_col,
         time_col=tdfx.time_col
     )
-    # Todo: 元論文と異なり勝手に0以上にしている
+    # Todo: 元論文と異なり勝手に0以上にしている: これバリむずい
     x_df = DataFrame(stack((tdfx[tdfx.signal_class_col], signal_1_lag), axis=1))
     return max(x_df.dropna().cov().values[0, 1], 0)
+    return abs(x_df.dropna().cov().values[0, 1])
 
 
 def get_variance_classroom(sdfx: StudentDataFrame, variance_student, variance_teacher):
