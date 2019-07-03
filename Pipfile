@@ -11,6 +11,7 @@ pandas = "==0.24.0"
 scikit-learn = "==0.21.2"
 rpy2 = "*"
 tzlocal = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.6"
