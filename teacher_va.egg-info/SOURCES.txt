@@ -10,3 +10,10 @@ teacher_va.egg-info/SOURCES.txt
 teacher_va.egg-info/dependency_links.txt
 teacher_va.egg-info/requires.txt
 teacher_va.egg-info/top_level.txt
+teacher_va/method/__init__.py
+teacher_va/method/cfr.py
+teacher_va/method/kane_staiger.py
+teacher_va/method/lib.py
+teacher_va/regression/__init__.py
+teacher_va/regression/teacher_value_added.py
+teacher_va/regression/use_r.py
